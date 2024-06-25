@@ -43,9 +43,8 @@ function askForNumber() {
 function generatePassword(string1, string2) {
   let code = '';
   /// Code your Bonus Mission Solution here ///
-  for (i = 0; i < string1.length; i++){
-    code += string1[i];
-    code += string2[i];
+  for (i = 0; i < string1.length && i < string2.length; i++){
+    code += string1[i] + string2[i];
   }
   return code;
 }
